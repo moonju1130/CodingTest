@@ -13,17 +13,15 @@ public class Test1_0126 {
 			sum += num;
 		}
 		
-		System.out.println("sum : " + sum);
 		double answer = sum / arr.length;
 		
 		System.out.println("정답 1 : " + answer);
 		
-		Solution2(arr);
-	
+		double answer2 = Solution2(arr);
+		System.out.println("정답 2 : " + answer2);
 	}
 	
 	public static double Solution2(int[] arr) {
-		System.out.println("정답 2 : " + Arrays.stream(arr).average().getAsDouble());
 		return Arrays.stream(arr).average().getAsDouble();
 	}
 }
