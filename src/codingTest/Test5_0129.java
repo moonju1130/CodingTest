@@ -10,8 +10,9 @@ public class Test5_0129 {
 
         for (int i = 0; i < n; ++i) {
             answer[i] = (long)x * (i + 1); // 각 요소에 값을 저장
-            System.out.println(answer[i]);
+            System.out.println("배열에 저장되는 숫자 : " + answer[i]);
         }
+        
     }
     
     
