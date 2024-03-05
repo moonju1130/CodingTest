@@ -8,9 +8,11 @@ public class Test3_0128 {
 		
 		for(int i = 1; i < n; ++i) {
 			if(n % i == 1) {
-				System.out.println(i);
+				answer = i;
 				break;
 			}
 		}
+		
+		System.out.println("정답 : " + answer);
 	}
 }
