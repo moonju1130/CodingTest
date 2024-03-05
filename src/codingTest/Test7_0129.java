@@ -1,23 +1,19 @@
 package codingTest;
 
-// 문자열 내 p와 y의 개수
+// 나머지가 1이 되는 수 찾기
 public class Test7_0129 {
 	public static void main(String[] args) {
-		String s = "pPoooyY";
-		int a = 0;
-		int b = 0;
+		int answer = 0;
+		int n = 10;
 		
-		for(int i = 0; i < s.length(); ++i) {
-			if(s.charAt(i) == 'p' || s.charAt(i) == 'P') {
-				a += 1;
-				System.out.println("a : " + a);
-			} else if(s.charAt(i) == 'y' || s.charAt(i) == 'Y') {
-				b += 1;
-				System.out.println("b : " + b);
+		for(int i = 1; i < n; ++i) {
+			if(n % i == 1) {
+				answer = i;
+				break;
 			}
 		}
 		
-		System.out.println("a는 : " + a);
-		System.out.println("b는 : " + b);
+		System.out.println("정답 : " + answer);
+
 	}
 }
