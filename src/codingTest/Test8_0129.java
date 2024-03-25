@@ -1,5 +1,6 @@
 package codingTest;
 
+// 문자열 내 p와 y의 개수
 public class Test8_0129 {
 	public static void main(String[] args) {
         boolean answer = true;
